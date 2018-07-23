@@ -4,7 +4,7 @@ This will be where I upload and keep track of various bits of Raw Data and proje
 ### Singular Raw Data Codes
 This will contain single bits of Raw Data.
 
-* **[ADanBot's Commands](https://github.com/Danny2362/dbm-projects/tree/adanbot)** - This is one of the many bots that I have made.
+* **[ADanBot's Commands](https://github.com/Danny2362/dbm-projects/tree/ADanBot)** - This is one of the many bots that I have made.
 
 ### Raw Data Packs
 The following links contain more than one command.
