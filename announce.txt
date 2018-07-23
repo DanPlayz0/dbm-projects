@@ -74,7 +74,7 @@
       "storage": "1",
       "varName": "embed",
       "emoji": "4",
-      "varName2": "??",
+      "varName2": "👍",
       "varName3": "",
       "name": "Add Reaction"
     },
@@ -82,7 +82,7 @@
       "storage": "1",
       "varName": "embed",
       "emoji": "4",
-      "varName2": "??",
+      "varName2": "👎",
       "varName3": "",
       "name": "Add Reaction"
     },
@@ -90,7 +90,7 @@
       "storage": "1",
       "varName": "embed",
       "emoji": "4",
-      "varName2": "??",
+      "varName2": "💛",
       "varName3": "",
       "name": "Add Reaction"
     }
