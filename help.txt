@@ -1,0 +1,72 @@
+{
+  "name": "help",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "DoXwb",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "cmdid",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "Commands",
+      "author": "",
+      "color": "RANDOM",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "cmdid",
+      "comparison": "1",
+      "value": "globalVars(\"oid\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Bot Owner",
+      "message": "`${globalVars(\"cmdprefix\")}bsperms` Shows the bots permissions (https://pastebin.com/kzvmiEdT)\n`${globalVars(\"cmdprefix\")}leave [servername]` Leaves a server (https://pastebin.com/raw/qweUV1pV)\n`${globalVars(\"cmdprefix\")}glist` Ammount of servers the bot is in (https://pastebin.com/raw/c43Y088E)\n`${globalVars(\"cmdprefix\")}bstatus [online|offline|dnd|idle]` Changes bot's status (https://pastebin.com/raw/qDvbtmRE)",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Moderator Commands",
+      "message": "`${globalVars(\"cmdprefix\")}announce [#channel] [text]` Announces a message in #channel (https://pastebin.com/raw/GpYramjZ)\n`${globalVars(\"cmdprefix\")}clear [#channel]` Clears all messages from the channel (https://pastebin.com/raw/zwajYRv9)",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Basic",
+      "message": "`${globalVars(\"cmdprefix\")}help` Displays all commands\n\n`${globalVars(\"cmdprefix\")}agree` Agrees to the rules(You will only have to do this once)\n",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
