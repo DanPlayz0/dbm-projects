@@ -1,0 +1,64 @@
+{
+  "name": "addrole",
+  "permissions": "MANAGE_ROLES",
+  "restriction": "1",
+  "_id": "iPkyI",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "if",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "if",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Usage: `${globalVars(\"cmdprefix\")}addrole [@user] [@role]`",
+      "storage": "1",
+      "varName2": "test",
+      "name": "Send Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "test",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "0",
+      "varName2": "",
+      "role": "0",
+      "varName": "",
+      "name": "Add Member Role"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ]
+}

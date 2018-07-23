@@ -1,0 +1,46 @@
+{
+  "name": "clear",
+  "permissions": "MANAGE_MESSAGES",
+  "restriction": "0",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "info": "4",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Store Command Params"
+    },
+    {
+      "channel": "3",
+      "count": "10000",
+      "condition": "0",
+      "custom": "",
+      "varName": "channel",
+      "name": "Delete Bulk Messages"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Cleared all messages",
+      "storage": "1",
+      "varName2": "supprmsg",
+      "name": "Send Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "supprmsg",
+      "name": "Delete Message"
+    }
+  ],
+  "_id": "fEtcI"
+}

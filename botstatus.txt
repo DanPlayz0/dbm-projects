@@ -1,0 +1,118 @@
+{
+  "name": "bstatus",
+  "permissions": "NONE",
+  "restriction": "4",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "stat",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "stat",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "stat",
+      "comparison": "1",
+      "value": "offline",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "status": "2",
+      "name": "Set Bot Status"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot is now \"Offline\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "stat",
+      "comparison": "1",
+      "value": "online",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "status": "0",
+      "name": "Set Bot Status"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot is now \"Online\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "stat",
+      "comparison": "1",
+      "value": "idle",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "status": "1",
+      "name": "Set Bot Status"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot is now \"Idle\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "stat",
+      "comparison": "1",
+      "value": "dnd",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "status": "3",
+      "name": "Set Bot Status"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot is now \"Do not disturb\"",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "pPhrr"
+}

@@ -1,0 +1,81 @@
+{
+  "name": "glist",
+  "temp": "",
+  "event-type": "4",
+  "_id": "ZlLoH",
+  "actions": [
+    {
+      "info": "17",
+      "storage": "1",
+      "varName2": "gnames",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "3",
+      "storage": "1",
+      "varName2": "guildlist",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "list": "7",
+      "varName": "gnames",
+      "start": "- ",
+      "middle": "",
+      "end": "\\n",
+      "storage": "1",
+      "varName2": "gnameslist",
+      "name": "Convert List to Text"
+    },
+    {
+      "title": "Servers",
+      "author": "",
+      "color": "#541854",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "```${tempVars(\"gnameslist\")}```\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Total ${tempVars(\"guildlist\")} servers!",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "bot-cmds",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "name": "Delete Message"
+    }
+  ],
+  "restriction": "4",
+  "permissions": "NONE",
+  "comType": "0"
+}

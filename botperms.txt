@@ -1,0 +1,841 @@
+{
+  "name": "bsperms",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "pXiaa",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "adminResult",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "6",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "adminResult",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_NICKNAMES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageNick",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "10",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageNick",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_GUILD",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageGuild",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "14",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageGuild",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_ROLES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageRoles",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "18",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageRoles",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_EMOJIS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageEmojis",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "22",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageEmojis",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "KICK_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "kickMembers",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "26",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "kickMembers",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "BAN_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "banMembers",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "30",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "banMembers",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "VIEW_AUDIT_LOG",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "viewAuditLog",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "34",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "viewAuditLog",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "CHANGE_NICKNAME",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "changeNickname",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "38",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "changeNickname",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "CREATE_INSTANT_INVITE",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "createInvite",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "42",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "createInvite",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_CHANNELS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageChannels",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "46",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageChannels",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_WEBHOOKS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageWebhooks",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "50",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageWebhooks",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "READ_MESSAGES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "readMessages",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "54",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "readMessages",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "SEND_MESSAGES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "sendMessages",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "58",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "sendMessages",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "SEND_TTS_MESSAGES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "sendTTSMessages",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "62",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "sendTTSMessages",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_MESSAGES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "manageMessages",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "66",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "manageMessages",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "EMBED_LINKS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "embedLinks",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "70",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "embedLinks",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "ATTACH_FILES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "attachFiles",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "74",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "attachFiles",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "READ_MESSAGE_HISTORY",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "readHistory",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "78",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "readHistory",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MENTION_EVERYONE",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "mentionEveryone",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "82",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "mentionEveryone",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "USE_EXTERNAL_EMOJIS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "externalEmojis",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "86",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "externalEmojis",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "ADD_REACTIONS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "addReaction",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "90",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "addReaction",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "CONNECT",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "connectVC",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "94",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "connectVC",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "SPEAK",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "VCspeak",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "98",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "VCspeak",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MUTE_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "muteMembers",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "102",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "muteMembers",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "DEAFEN_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "deafenMembers",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "106",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "deafenMembers",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MOVE_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "moveMembers",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "110",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "moveMembers",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "USE_VAD",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "1",
+      "varName": "useVAD",
+      "changeType": "0",
+      "value": "\"Yes\"",
+      "name": "Control Variable"
+    },
+    {
+      "call": "114",
+      "name": "Jump to Action"
+    },
+    {
+      "storage": "1",
+      "varName": "useVAD",
+      "changeType": "0",
+      "value": "\"No\"",
+      "name": "Control Variable"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "sname",
+      "name": "Store Server Info"
+    },
+    {
+      "title": "Permission List",
+      "author": "",
+      "color": "#541854",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "output",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "output",
+      "message": "I have access to the following permissions-\n\nAdministrator: **${tempVars(\"adminResult\")}**\nManage Nicknames: **${tempVars(\"manageNick\")}**\nManage Server: **${tempVars(\"manageGuild\")}**\nManage Roles: **${tempVars(\"manageRoles\")}**\nManage Emojis: **${tempVars(\"manageEmojis\")}**\nManage Channels: **${tempVars(\"manageChannels\")}**\nManage Webhooks: **${tempVars(\"manageWebhooks\")}**\nManage Messages: **${tempVars(\"manageMessages\")}**\nKick Members: **${tempVars(\"kickMembers\")}**\nBan Members: **${tempVars(\"banMembers\")}**\nView Audit Log: **${tempVars(\"viewAuditLog\")}**\nChange Nickname: **${tempVars(\"changeNickname\")}**\nCreate Instant Invite: **${tempVars(\"createInvite\")}**\nRead Messages: **${tempVars(\"readMessages\")}**\nSend Messages: **${tempVars(\"sendMessages\")}**\nSend /TTS Messages: **${tempVars(\"sendTTSMessages\")}**\nSend Embedded Links: **${tempVars(\"embedLinks\")}**\nAttach Files: **${tempVars(\"attachFiles\")}**\nRead Message History: **${tempVars(\"readHistory\")}**\nMention Everyone: **${tempVars(\"mentionEveryone\")}**\nUse External (Global) Emojis: **${tempVars(\"externalEmojis\")}**\nAdd Reactions: **${tempVars(\"addReaction\")}**\nConnect to Voice Channels: **${tempVars(\"connectVC\")}**\nSpeak in Voice Channels: **${tempVars(\"VCspeak\")}**\nMute Members in Voice Channels: **${tempVars(\"muteMembers\")}**\nDeafen Members in Voice Channels: **${tempVars(\"deafenMembers\")}**\nMove Members in Voice Channels: **${tempVars(\"moveMembers\")}**\nUse Voice Acitivity: **${tempVars(\"useVAD\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "output",
+      "message": "From ${tempVars(\"sname\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "output",
+      "channel": "1",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": []
+}
