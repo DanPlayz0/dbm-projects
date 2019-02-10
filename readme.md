@@ -4,7 +4,7 @@ This will be where I upload and keep track of various bits of Raw Data and proje
 ### Singular Raw Data Codes
 This will contain single bits of Raw Data.
 
-* **[Verify](https://github.com/zachdoug24/dbm-projects/tree/master)** - This is one of the many bots that I have made.
+* **[Verify Command](https://github.com/zachdoug24/dbm-projects/tree/verify)** - This is one of the many bots that I have made.
 
 ### Raw Data Packs
 The following links contain more than one command.
