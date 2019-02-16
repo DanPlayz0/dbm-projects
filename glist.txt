@@ -1,0 +1,76 @@
+{
+  "name": "glist",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "xRNGb",
+  "actions": [
+    {
+      "list": "4",
+      "varName": "",
+      "start": "- ",
+      "middle": "",
+      "end": "\\n",
+      "storage": "1",
+      "varName2": "test",
+      "sort": "0",
+      "name": "Convert List to Text"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "servername",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": ":no_entry: You need to write the full server's name to make me leave.\n\nPossible Servers:\n`${tempVars(\"test\")}`",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"servername\")}",
+      "storage": "1",
+      "varName": "server",
+      "name": "Find Server"
+    },
+    {
+      "server": "1",
+      "varName": "server",
+      "info": "13",
+      "storage": "1",
+      "varName2": "chlist",
+      "name": "Store Server Info"
+    },
+    {
+      "list": "7",
+      "varName": "chlist",
+      "getType": "0",
+      "position": "",
+      "storage": "1",
+      "varName2": "firstchannel",
+      "name": "Get Item from List"
+    },
+    {
+      "server": "1",
+      "varName": "server",
+      "name": "Leave Server"
+    }
+  ]
+}
