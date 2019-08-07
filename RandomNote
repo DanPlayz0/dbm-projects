@@ -4,12 +4,60 @@
   "restriction": "1",
   "actions": [
     {
-      "behavior": "1",
-      "interpretation": "0",
-      "code": "if(msg.channel.name == serverVars(\"note-channel\".name)) {\nthis.callNextAction(cache);\n}else{\nmsg.channel.send(\"This command cannot be used here. Use `serverVars(\"note-channel\")`. If you are an admin, you may have to set the channel.\")\n}",
-      "storage": "0",
+      "storage": "2",
+      "varName": "note-channel",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
       "varName": "",
-      "name": "Run Script"
+      "message": "An admin must set the channel where this command may be executed.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "cname",
+      "name": "Store Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "cname",
+      "comparison": "1",
+      "value": "serverVars(\"note-channel\")",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "This command could only be run in ${serverVars(\"note-channel\")}!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "2",
