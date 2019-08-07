@@ -1,5 +1,5 @@
 # Note System   
-This is a request by **stanciu#1337**.    
+This is a commission by **stanciu#1337**.    
 
 #### NO PERMISSION COMMANDS
 * !rnote Shows a random note.
