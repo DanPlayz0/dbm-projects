@@ -4,16 +4,6 @@
   "restriction": "1",
   "actions": [
     {
-      "channel": "0",
-      "varName": "",
-      "message": "If this command does not work please try to set the note channel using `notechannel [#channel]`",
-      "storage": "1",
-      "varName2": "abcad",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Send Message"
-    },
-    {
       "behavior": "1",
       "interpretation": "0",
       "code": "if(msg.channel.name == serverVars(\"note-channel\".name)) {\nthis.callNextAction(cache);\n}else{\nmsg.channel.send(\"This command cannot be used here. Use `serverVars(\"note-channel\")`. If you are an admin, you may have to set the channel.\")\n}",
