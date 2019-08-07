@@ -1,5 +1,5 @@
-# Discord Bot Maker Projects    
-This is where I upload and keep track of various bits of Raw Data and projects.    
+# Note System   
+This is a comission for **stanciu#1337**.    
 
 #### NO PERMISSION COMMANDS
 * !rnote Shows a random note.
