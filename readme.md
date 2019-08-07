@@ -12,3 +12,13 @@ The following links contain more than one command.
 * **[Information Command Pack](https://github.com/zachdoug24/dbm-projects/tree/master)** - Various commands to view information of server, bot, user, etc.
 * **[ADanBot(V1) Commands](https://github.com/Danny2362/dbm-projects/tree/ADanBot)** - This is one of the many bots that I have made.
 * **[ADanBot(V2) Commands](https://github.com/Danny2362/dbm-projects/tree/ADanBot2)** - This is one of the many bots that I have made.
+
+
+`!rnote` Shows a random note.
+`!notestock` How many notestock left.
+
+**ADMIN ONLY**
+`!addnote [text]` Adds text to note.
+`!notes` Shows all notes
+`!clearnotes` Erases all notes
+`!notechannel [#channel]` note channel
